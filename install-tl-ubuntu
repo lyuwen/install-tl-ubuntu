@@ -52,7 +52,7 @@ fi
 ERRORPREFIX="${ECHOPREFIX}ERROR: "
 WARNINGPREFIX="${ECHOPREFIX}WARNING: "
 
-ARGS=$( getopt -o "r:mt:u:hvaebo:fgq:p:i:s" -l "retry:,more-tex,truetype-dir:,usr-fonts-dir:,help,version,allow-small,hebrew,no-link-ubuntu,log-dir:,only-apt-and-dpkg,no-apt-or-dpkg,repository:,profile:,iso:,pretest" \
+ARGS=$( getopt -o "r:mt:u:hvacebo:fgq:p:i:s" -l "retry:,more-tex,truetype-dir:,usr-fonts-dir:,help,version,allow-small,hebrew,no-link-ubuntu,log-dir:,only-apt-and-dpkg,no-apt-or-dpkg,repository,scheme:,profile:,iso:,pretest" \
       -n "$( basename "$0" )" -- "$@" )
 # If bad arguments, exit (getopt will have already written the error to STDERR).
 [ "$?" = "0" ] || clean_error
