@@ -88,7 +88,7 @@ do
       shift 1
       ;;
   -c|--scheme)
-      if [ -f "$2" ]; then
+      if [ ! -z "$2" ]; then
         SCHEME="$( readlink -f "$2" )"
       else
         echo "${ERRORPREFIX}the argument to $1 must be an scheme name." >&2
