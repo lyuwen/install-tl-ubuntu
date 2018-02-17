@@ -76,7 +76,7 @@ ONLY_APT_DPKG=0
 NO_APT_DPKG=0
 LOG_DIR="${MAINDIR}"
 PRETEST=0
-SCHEME=scheme-full
+SCHEME="scheme-full"
 
 while true
 do
@@ -379,6 +379,11 @@ exec 3>> "${LOG_DIR}/install-tl-ubuntu_EXTRAS.log"
 # report that something went wrong (i.e. MAINRET != 1).
 # For some, we just report to STDERR (warnings).
 MAINRET=0
+
+if [ -f get_defian_control.py ]; then
+  echo "Getting the debian-control-texlive-in.txt from tug.org"
+  python ./get_defian_control.py
+fi
 
 ## ALTERNATIVE we could embed it.
 if [ ! -e "debian-control-texlive-in.txt" ]; then
