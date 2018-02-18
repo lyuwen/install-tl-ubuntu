@@ -1,4 +1,4 @@
-# texlive.profile written on Sun Feb 18 07:40:41 2018 UTC
+# texlive.profile written on Sun Feb 18 19:45:37 2018 UTC
 # It will NOT be updated and reflects only the
 # installation profile at installation time.
 selected_scheme scheme-custom
@@ -21,6 +21,7 @@ collection-games 1
 collection-humanities 1
 collection-langenglish 1
 collection-latex 1
+collection-latexextra 1
 collection-latexrecommended 1
 collection-mathscience 1
 collection-metapost 1
