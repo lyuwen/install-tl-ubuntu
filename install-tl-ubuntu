@@ -76,7 +76,7 @@ ONLY_APT_DPKG=0
 NO_APT_DPKG=0
 LOG_DIR="${MAINDIR}"
 PRETEST=0
-SCHEME="scheme-full"
+SCHEME=
 
 while true
 do
@@ -626,7 +626,11 @@ while (( timesTried != timesToTry )); do
     # TLPROFILE contains both --profile and the argument. ALTERNATIVE: could use
     # two variables for TLPROFILE and have both be empty if no argument.
     if [ -z "${ISO_FILE}" ]; then
-        INSTALL_ARG="./install-tl -scheme ${SCHEME} -repository \"${TLREPO}\""
+        if [ -z "${SCHEME}" ]; then
+          INSTALL_ARG="./install-tl -repository \"${TLREPO}\""
+        else
+          INSTALL_ARG="./install-tl -scheme ${SCHEME} -repository \"${TLREPO}\""
+        fi
     else
         INSTALL_ARG="\"${MOUNT_ISO_DIR}/install-tl\""
     fi
