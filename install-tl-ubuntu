@@ -380,9 +380,9 @@ exec 3>> "${LOG_DIR}/install-tl-ubuntu_EXTRAS.log"
 # For some, we just report to STDERR (warnings).
 MAINRET=0
 
-if [ -f get_defian_control.py ]; then
+if [ -f get_debian_control.py ]; then
   echo "Getting the debian-control-texlive-in.txt from tug.org"
-  python ./get_defian_control.py
+  python ./get_debian_control.py
 fi
 
 ## ALTERNATIVE we could embed it.
