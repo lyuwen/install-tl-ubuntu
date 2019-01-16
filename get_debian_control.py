@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+#
+# This script goes to the website https://www.tug.org/texlive/debian.html and 
+# get the latest debian control file into debian-control-texlive-in.txt
+# To use it:
+# ```
+#   equivs-build debian-control-texlive-in.txt
+#   dpkg -i texlive-local_<version>_all.deb
+# ```
+
 import requests
 from bs4 import BeautifulSoup
 
