@@ -1,9 +1,9 @@
 Section: misc
 Priority: optional
-Standards-Version: 3.9.8
+Standards-Version: 4.1.4
 
 Package: texlive-local
-Version: 2017-1
+Version: 2018-1
 Maintainer: you <you@yourdomain.example.org>
 Provides: chktex, biblatex, biblatex-dw, cm-super, cm-super-minimal, context, 
  dvidvi, dvipng, feynmf, fragmaster, jadetex, lacheck, latex-beamer, 
@@ -36,6 +36,6 @@ Provides: chktex, biblatex, biblatex-dw, cm-super, cm-super-minimal, context,
  thailatex, tipa, tipa-doc, xindy, xindy-rules, xmltex, asymptote, texinfo
 Depends: freeglut3
 Architecture: all
-Description: My local installation of TeX Live 2017.
- A full "vanilla" TeX Live 2017
+Description: My local installation of TeX Live 2018.
+ A full "vanilla" TeX Live 2018
  http://tug.org/texlive/debian#vanilla
